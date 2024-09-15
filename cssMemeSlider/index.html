@@ -3,47 +3,70 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="./style.css">
     <title>cssMemeSlider</title>
   </head>
   <body>
     <div class="container">
       <div class="carousel">
-        <div class="pagination">
+        <div class="carousel__pagination">
           <input type="radio" name="slider" id="meme1" checked>
-          <label class="pagination__item" for="meme1">
-            <span class="circle"></span>
+          <label class="carousel__dot" for="meme1">
+            <span class="carousel__circle"></span>
           </label>
           <input type="radio" name="slider" id="meme2">
-          <label class="pagination__item" for="meme2">
-            <span class="circle"></span>
+          <label class="carousel__dot" for="meme2">
+            <span class="carousel__circle"></span>
           </label>
           <input type="radio" name="slider" id="meme3">
-          <label class="pagination__item" for="meme3">
-            <span class="circle"></span>
+          <label class="carousel__dot" for="meme3">
+            <span class="carousel__circle"></span>
           </label>
           <input type="radio" name="slider" id="meme4">
-          <label class="pagination__item" for="meme4">
-            <span class="circle"></span>
+          <label class="carousel__dot" for="meme4">
+            <span class="carousel__circle"></span>
           </label>
         </div>
-        <div class="pictures-wrapper">
-          <div class="carousel-img carousel__img">
-            <div class="carousel-img__items">
+        <div class="carousel__slider carousel__slider--images">
+          <div class="carousel__track">
+            <div class="carousel__slide">
               <img src="./assets/images/meme-1.png" alt="Work-life balance.">
-              <img src="./assets/images/meme-2.png" alt="Keep calm and carry on.">
-              <img src="./assets/images/meme-3.png" alt="You can't just copy and paste CSS.">
-              <img src="./assets/images/meme-4.png" alt="Relax and take it easy.">
+            </div>
+            <div class="carousel__slide">
+              <img
+                src="./assets/images/meme-2.png"
+                alt="Keep calm and carry on."
+             >
+            </div>
+            <div class="carousel__slide">
+              <img
+                src="./assets/images/meme-3.png"
+                alt="You can't just copy and paste CSS."
+             >
+            </div>
+            <div class="carousel__slide">
+              <img
+                src="./assets/images/meme-4.png"
+                alt="Relax and take it easy."
+             >
             </div>
           </div>
         </div>
-        <div class="carousel-text carousel__text">
-          <div class="carousel-text__items">
-            <p>Work-life balance</p>
-            <p>Keep calm and carry on</p>
-            <p>You can't just copy and paste CSS</p>
-            <p>Relax and take it easy</p>
+        <div class="carousel__slider carousel__slider--text">
+          <div class="carousel__track">
+            <div class="carousel__slide">
+              <p>Work-life balance</p>
+            </div>
+            <div class="carousel__slide">
+              <p>Keep calm and carry on</p>
+            </div>
+            <div class="carousel__slide">
+              <p>You can't just copy and paste CSS</p>
+            </div>
+            <div class="carousel__slide">
+              <p>Relax and take it easy</p>
+            </div>
           </div>
         </div>
       </div>
