@@ -187,7 +187,6 @@ input:checked + .carousel__dot .carousel__circle {
   .carousel__slider--text {
     width: 100%;
     order: 3;
-    text-align: center;
   }
 
   .carousel__pagination {
