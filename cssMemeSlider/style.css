@@ -149,21 +149,26 @@ input:checked + .carousel__dot .carousel__circle {
   transform: translateX(-300%);
 }
 
-@media screen and (hover: hover) {
+@media (hover: hover) {
   .carousel__dot:hover,
   .carousel__circle:hover {
     cursor: pointer;
-    transition: background-color 0.6s, border 0.6s;
   }
 
-  .carousel__dot:hover
-    .carousel__circle:not(input:checked + .carousel__circle) {
+  .carousel__dot:hover > .carousel__circle {
     border: 0.2rem solid #ffe600;
     background-color: #ffe600;
     transition: background-color 0.6s, border 0.6s;
   }
 
-  .carousel__dot .carousel__circle:active {
+  .carousel__dot:active > .carousel__circle {
+    border: 0.2rem solid #ff0000;
+    background-color: #ff0000;
+  }
+}
+
+@media (hover: none) {
+  .carousel__dot:active > .carousel__circle {
     border: 0.2rem solid #ff0000;
     background-color: #ff0000;
   }
